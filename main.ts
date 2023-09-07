@@ -9,8 +9,6 @@ function ledsOn (aantal: number) {
     }
 }
 basic.forever(function () {
-    serial.writeString("hallo")
-    serial.writeLine("")
     pin0 = pins.analogReadPin(AnalogPin.P0)
     serial.writeNumber(pin0)
     serial.writeLine("")
